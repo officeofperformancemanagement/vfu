@@ -1,21 +1,17 @@
-# vutil-py
-Very Unofficial Python Bindings for Vision File Utility
-
-## before installing
-Copy a version of vutil32.exe from MicroFocus / OpenText to an accessible path.
-vutil32.exe is a proprietary program and will not be included in this repo. 
+# vfu
+Unofficial Python Bindings for Vision File Utility
 
 ## install
 ```sh
-pip install git+https://github.com/officeofperformancemanagement/vutil-py
+pip install vfu
 ```
 
 ## usage
 ```py
-from vutil import VUTIL
+from vfu import vutil32
 
-# create an instance of VUTIL
-v = VUTIL("/Users/user/vutil32.exe")
+# create an instance of vutil32
+v = vutil32("/Users/user/vutil32.exe")
 
 src = "/Users/user/Documents/folder/DATA"
 dst = "/Users/user/Documents/folder/DATA.txt"
